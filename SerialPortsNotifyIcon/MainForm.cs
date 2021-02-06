@@ -34,6 +34,8 @@ namespace SerialPortsNotifyIcon
             {
                 menuStrip.Items.Add(s, null);
             }
+            var item = menuStrip.Items.Add("Exit");
+            item.Click += (obj, e) => { Application.Exit(); };
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
